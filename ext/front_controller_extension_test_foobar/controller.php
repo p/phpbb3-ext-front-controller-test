@@ -36,7 +36,7 @@ class phpbb_ext_front_controller_extension_test_foobar_controller implements php
 		$this->template = $template;
 		$this->request = $request;
 
-		$this->user->add_ext_lang('foobar', 'foobar');
+		$this->user->add_lang_ext('foobar', 'foobar');
 
 		$this->template->set_ext_dir_prefix($phpbb_root_path . 'ext/foobar/');
 
