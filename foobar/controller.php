@@ -44,7 +44,7 @@ class phpbb_ext_foobar_controller implements phpbb_extension_controller_interfac
 			'body' => 'foobar_body.html'
 		));
 
-		$template->assign_var('MESSAGE' => $this->getMessage())
+		$this->template->assign_var('MESSAGE' => $this->get_message())
 
 		$this->template->display('body');
 	}
@@ -53,7 +53,7 @@ class phpbb_ext_foobar_controller implements phpbb_extension_controller_interfac
 	* Trigger error to display the page
 	*
 	*/
-	private function getMessage()
+	private function get_message()
 	{
 		return 'Hello, ' . $this->user->data['username'] . '!<br />You are viewing the front page of the foobar extension.';
 	}
