@@ -1,6 +1,6 @@
 <?php
 
-class phpbb_ext_foobar_controller implements phpbb_extension_controller_interface
+class phpbb_ext_front_controller_extension_test_foobar_controller implements phpbb_extension_controller_interface
 {
 	/**
 	* @var phpBB User object
